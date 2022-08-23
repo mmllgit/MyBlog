@@ -1,0 +1,37 @@
+.notification {
+  color: var(--color-grey-100);
+  background-color: var(--color-grey-800);
+  text-align: center;
+  position: fixed;
+  line-height: 3rem;
+  top: 5%;
+  width: 300px;
+  padding: 0 var(--size-4);
+  left: 50%;
+  transform: translateX(-50%);
+  animation: modalAnimation 0.4s;
+  opacity: 1;
+  h2 {
+    font-size: var(--size-6);
+    margin: 0;
+  }
+}
+
+.success {
+  background-color: var(--color-success-500);
+  color: var(--color-grey-800);
+}
+
+.error {
+  background-color: var(--color-error-500);
+}
+
+@keyframes modalAnimation {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    from: 1;
+  }
+}

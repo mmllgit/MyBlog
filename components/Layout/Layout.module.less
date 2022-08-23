@@ -1,0 +1,32 @@
+.home-header-container {
+  display: flex;
+  height: 100px;
+  background-color: var(--second-theme-color);
+  justify-content: space-between;
+  align-items: center;
+  .my-blog {
+    font-size: var(--header-title-font-size);
+    font-weight: 700;
+    width: 30%;
+    text-align: center;
+    a {
+      color: white;
+    }
+  }
+  .post-container {
+    display: flex;
+    width: 20%;
+    div {
+      font-size: var(--tabs-title-font-size);
+      a {
+        color: var(--color-grey-100);
+      }
+      a:hover {
+        color: var(--color-grey-500);
+      }
+    }
+    div:nth-child(2) {
+      margin-left: 100px;
+    }
+  }
+}

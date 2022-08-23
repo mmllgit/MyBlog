@@ -1,0 +1,110 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-grey-500) !important;
+  color: #252525;
+  font-family: "Roboto", sans-serif;
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  /* 一级主题颜色 深绿 */
+  --first-theme-color: #1da57a;
+  /* 二级主题颜色 浅绿 */
+  --second-theme-color: #1f1c1f;
+  /* 三级主题颜色*/
+  --third-theme-color: #9d99a3;
+  /* 一级背景颜色 白色 */
+  --first-background-color: rgb(255, 255, 255);
+  /* 二级背景颜色 灰色 */
+  --second-background-color: rgb(240, 242, 245);
+  /* 三级背景颜色 */
+  --third-background-color: rgb(194, 195, 197);
+  /* 颜色box-shadow */
+  --color-box-shadow: 0 0 0 2px rgb(0 83 7 / 20%) !important;
+
+  /* 立体悬浮效果 */
+  --stereoscopic-box-shadow: 0 8px 12px rgb(0 33 79 / 11%) !important;
+  --stereoscopic-border-radius: 10px !important;
+
+  --color-grey-50: hsl(265, 55%, 96%);
+  --color-grey-100: hsl(265, 19%, 88%);
+  --color-grey-200: hsl(265, 7%, 70%);
+  --color-grey-300: hsl(265, 6%, 66%);
+  --color-grey-400: hsl(265, 4%, 57%);
+  --color-grey-500: hsl(265, 3%, 53%);
+  --color-grey-600: hsl(265, 4%, 42%);
+  --color-grey-700: hsl(265, 4%, 31%);
+  --color-grey-800: hsl(276, 5%, 20%);
+  --color-grey-900: hsl(280, 5%, 13%);
+
+  --color-primary-50: #c8b3ce;
+  --color-primary-100: #a07aaa;
+  --color-primary-200: #884c97;
+  --color-primary-300: #843897;
+  --color-primary-400: #732392;
+  --color-primary-500: #5a097a;
+  --color-primary-600: #480264;
+  --color-primary-700: #3d0264;
+  --color-primary-800: #3b8ed2;
+
+  --color-success-100: #a2f0bc;
+  --color-success-500: #12bd4b;
+
+  --color-error-100: #f1acc9;
+  --color-error-300:#e92c2c;
+  --color-error-500: #a10c4a;
+
+  --color-border-100: #fff;
+  --color-border-200: #b7b4b4;
+  --color-border-300: #7dc7e9;
+  --color-border-500:#1890ff;
+
+  --size-1: 0.25rem;
+  --size-2: 0.5rem;
+  --size-3: 0.75rem;
+  --size-4: 1rem;
+  --size-5: 1.25rem;
+  --size-6: 1.5rem;
+  --size-8: 2rem;
+  --size-16: 4rem;
+  --size-20: 5rem;
+  --size-40: 10rem;
+
+  /* 标题大字体 */
+  --header-title-font-size: 1.5rem;
+  /* 标题tabs栏字体 */
+  --tabs-title-font-size: 1rem;
+  /* 介绍文字标题字体*/
+  --introduce-title-font-size: 3rem;
+  /* 介绍文字内容字体*/
+  --introduce-content-font-size: 1.5rem;
+
+  /* 竖直间距 */
+  --vertical-gap: 1rem;
+
+  /* 必填颜色 */
+  --must-color: #ff4d4f;
+
+  /* 边框颜色 */
+  --border-style: 1px solid rgb(194, 195, 197);
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Oswald", "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  font: inherit;
+  cursor: pointer;
+}
