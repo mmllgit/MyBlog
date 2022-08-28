@@ -121,12 +121,12 @@ const Posts: React.FC = ({ posts: allPosts }: any) => {
           </div>
         </Modal>
       )}
-      <button
+      {/* <button
         className={styles["new-add-button"]}
         onClick={() => setAddVisible(true)}
       >
         新增
-      </button>
+      </button> */}
       <Head>
         <title>所有文章</title>
       </Head>
@@ -140,8 +140,8 @@ const Posts: React.FC = ({ posts: allPosts }: any) => {
                   <Image
                     className={styles["image"]}
                     src={`/images/${post.image}`}
-                    width={450}
-                    height={300}
+                    width={1000}
+                    height={700}
                   ></Image>
                 </div>
                 <div className={styles["feature-item-content"]}>

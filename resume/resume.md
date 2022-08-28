@@ -19,8 +19,6 @@ excerpt: 关于我的一些信息.
 
 + 掌握HTML、CSS、Javascript等前端基础。
 
-+ 掌握HTML、CSS、Javascript等前端基础。
-
 + 掌握react、typescript，具有实战开发经验。
 
 + 掌握Tarojs，具有小程序开发能力。

@@ -1,4 +1,5 @@
 .feature-container {
+  padding-bottom: 20px;
   .upload-button {
     width: var(--size-16);
     height: var(--size-16);
@@ -94,41 +95,54 @@
   .feature-item-container {
     width: 70%;
     margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+    gap: 1.5rem;
+    align-content: center;
     margin-top: 30px;
     .feature-item {
       display: flex;
       background-color: var(--color-grey-900);
-      width: 23%;
-      margin-left: 1.33%;
       aspect-ratio: 1/1.1;
-      margin-bottom: 20px;
       flex-direction: column;
       .feature-item-content {
         display: flex;
         flex: 1;
         flex-direction: column;
         align-items: center;
-        padding: 0 10px;
         h3 {
           flex: 1;
           color: var(--color-grey-100);
           font-size: var(--size-5);
+          margin-top: 10px;
         }
         time {
+          margin-bottom: 10px;
           color: var(--color-grey-300);
         }
         p {
-          flex: 1;
+          flex: 2;
           color: var(--color-grey-100);
           font-size: var(--size-4);
           display: -webkit-box;
           overflow: hidden;
           -webkit-box-orient: vertical;
-          -webkit-line-clamp: 1;
+          -webkit-line-clamp: 2;
         }
       }
     }
+  }
+}
+
+@media (max-width: 1000px) {
+  .feature-item {
+    width: unset !important;
+  }
+  .feature-title {
+    text-align: center;
+    margin-left: 0 !important;
+  }
+  .feature-item-container {
+    margin-left: 15% !important;
   }
 }

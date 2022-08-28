@@ -4,10 +4,11 @@
   background-color: var(--second-theme-color);
   justify-content: space-between;
   align-items: center;
+  padding: 0 10%;
+  // min-width: calc(768px - 20%);
   .my-blog {
-    font-size: var(--header-title-font-size);
+    font-size: var(--size-6);
     font-weight: 700;
-    width: 30%;
     text-align: center;
     a {
       color: white;
@@ -15,9 +16,8 @@
   }
   .post-container {
     display: flex;
-    width: 20%;
     div {
-      font-size: var(--tabs-title-font-size);
+      font-size: var(--size-4);
       a {
         color: var(--color-grey-100);
       }
@@ -26,7 +26,11 @@
       }
     }
     div:nth-child(2) {
-      margin-left: 100px;
+      padding-left: 60px;
     }
   }
+}
+
+@media (min-width:768px) {
+  
 }

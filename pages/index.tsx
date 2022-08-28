@@ -33,8 +33,8 @@ const Home: React.FC = ({ posts }: any) => {
                     <Image
                       className={styles["image"]}
                       src={`/images/${post.image}`}
-                      width={300}
-                      height={200}
+                      width={1000}
+                      height={700}
                     ></Image>
                   </div>
                   <div className={styles["feature-item-content"]}>

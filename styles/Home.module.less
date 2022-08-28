@@ -1,14 +1,13 @@
 .home-container {
+  padding-bottom: 30px;
   .introduce-container {
     background: linear-gradient(
       var(--second-theme-color),
       var(--color-grey-800)
     );
-    display: flex;
-    padding-left: 24%;
-    align-items: center;
     padding-bottom: 20px;
     div:nth-child(1) {
+      text-align: center;
       .img {
         width: 300px;
         height: 300px;
@@ -16,17 +15,17 @@
       }
     }
     div:nth-child(2) {
-      margin-left: 10%;
+      text-align: center;
+      margin-top: 20px;
       h1 {
+        text-align: center;
         color: var(--color-grey-300);
         font-size: var(--size-8);
         font-weight: 700;
       }
     }
-
   }
   .feature-container {
-    // background-color: var(--color-grey-300);
     .feature-title {
       font-size: var(--size-6);
       color: var(--color-grey-900);
@@ -35,18 +34,23 @@
       margin-left: 12%;
     }
     .feature-item-container {
-      margin-left: 12%;
+      margin: 20px 15%;
       width: 70%;
-      display: flex;
-      flex-wrap: wrap;
-      margin-top: 30px;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+      gap: 1.5rem;
+      align-content: center;
       .feature-item {
         background-color: var(--color-grey-900);
-        width: 20%;
         aspect-ratio: 1/1.1;
-        margin-right: 2.5%;
         display: flex;
         flex-direction: column;
+        .feature-item-img {
+          width: 100%;
+          img {
+            width: 100%;
+          }
+        }
         .feature-item-content {
           display: flex;
           flex-direction: column;
@@ -55,23 +59,39 @@
           flex: 1;
           h3 {
             flex: 1;
+            margin-top: 10px;
             color: var(--color-grey-100);
             font-size: var(--tabs-title-font-size);
           }
           time {
             color: var(--color-grey-300);
+            margin-bottom: 5px;
           }
           p {
-            flex: 1;
+            flex: 2;
             color: var(--color-grey-100);
             font-size: var(--size-4);
             display: -webkit-box;
             overflow: hidden;
             -webkit-box-orient: vertical;
-            -webkit-line-clamp: 1;
+            -webkit-line-clamp: 2;
           }
         }
       }
+    }
+  }
+  @media (max-width: 768px) {
+    .introduce-container div:nth-child(2) h1 {
+      font-size: var(--size-4);
+      margin-top: 10px;
+      text-align: center;
+    }
+    .feature-title {
+      text-align: center;
+      margin-left: 0 !important;
+    }
+    .feature-item-container {
+      margin-left: 15% !important;
     }
   }
 }
