@@ -1,11 +1,11 @@
 import type { NextApiRequest, NextApiResponse } from "next";
 import multer from "multer";
 import NextCors from "nextjs-cors";
-import mysql from "mysql2";
 import path from "path";
-require("dotenv").config();
+// import mysql from "mysql2";
+// require("dotenv").config();
 
-const postsDirectory = path.join(process.cwd(), "posts");
+const postsDirectory = path.join(process.cwd(), "/public/posts");
 
 function runMiddleware(
   req: NextApiRequest & { [key: string]: any },
@@ -73,16 +73,16 @@ export default async function handler(
       },
     });
     await runMiddleware(req, res, multerUpload.single("file"));
-    const connection = mysql.createConnection(
-      `mysql://hztzo6dt2tpp:pscale_pw_maV4a1hl0AyXxRoQZk_61HTYVLX2swVaE4j9ogzjmj4@ogzvytsuaai4.us-east-3.psdb.cloud/dxlblog?ssl={"rejectUnauthorized":true}`
-    );
-    console.log("Connected to PlanetScale!");
+    // const connection = mysql.createConnection(
+    //   `mysql://hztzo6dt2tpp:pscale_pw_maV4a1hl0AyXxRoQZk_61HTYVLX2swVaE4j9ogzjmj4@ogzvytsuaai4.us-east-3.psdb.cloud/dxlblog?ssl={"rejectUnauthorized":true}`
+    // );
+    // console.log("Connected to PlanetScale!");
     res.status(200).json({
       code: 200,
       data: null,
       msg: "上传成功",
     });
-    connection.end();
+    // connection.end();
   } else {
     res.status(400).json({
       code: 400,
