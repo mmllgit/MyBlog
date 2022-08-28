@@ -5,7 +5,7 @@ import path from "path";
 // import mysql from "mysql2";
 // require("dotenv").config();
 
-const postsDirectory = path.join(process.cwd(), "/static/posts");
+const postsDirectory = path.resolve(".next", "static");
 
 function runMiddleware(
   req: NextApiRequest & { [key: string]: any },
