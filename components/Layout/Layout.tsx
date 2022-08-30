@@ -14,6 +14,9 @@ export const Layout = (props: any) => {
             <Link href="/posts">所有文章</Link>
           </div>
           <div>
+            <Link href="/leetcode">力扣刷题</Link>
+          </div>
+          <div>
             <Link href="/about">关于我</Link>
           </div>
         </div>
