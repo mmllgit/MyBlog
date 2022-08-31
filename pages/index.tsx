@@ -2,7 +2,6 @@ import Link from "next/link";
 import Image from "next/image";
 import styles from "@/Home.module.less";
 import { getFeaturePosts } from "lib/getPostUtils";
-import { getFeaturePosts as getLeetcodeFeatures } from "lib/getleetcodeUtils";
 import Head from "next/head";
 
 const Home: React.FC = ({ posts }: any) => {
@@ -57,7 +56,7 @@ export async function getStaticProps() {
 
   return {
     props: {
-      posts: [...getFeaturePosts(), ...getLeetcodeFeatures()],
+      posts: [...getFeaturePosts()],
     },
   };
 }
