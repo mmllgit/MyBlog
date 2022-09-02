@@ -15,6 +15,7 @@ const About: React.FC = ({
       <Head>
         <title>{title}</title>
         <meta name="description" content={excerpt} />
+        <base target="_blank" />
       </Head>
       <div className={styles["article-container"]}>
         <header className={styles["header"]}>

@@ -47,6 +47,7 @@ const PostDetail: React.FC<IProps> = ({
       <Head>
         <title>{title}</title>
         <meta name="description" content={excerpt} />
+        <base target="_blank" />
       </Head>
       <div className={styles["article-container"]}>
         <ReactMarkdown  remarkPlugins={[gfm]} components={customRenderers}>{content}</ReactMarkdown>
