@@ -3,7 +3,7 @@ title: react技术揭秘
 excerpt: react技术揭秘
 image: head.jpg
 date: "2022-9-10"
-isFeatured: true
+isFeatured: false
 ---
 
 ### React 理念

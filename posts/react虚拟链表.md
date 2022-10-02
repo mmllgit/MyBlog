@@ -3,7 +3,7 @@ title: react虚拟链表
 excerpt: react虚拟链表
 image: head.jpg
 date: "2022-9-8"
-isFeatured: true
+isFeatured: false
 ---
 
 ```js
